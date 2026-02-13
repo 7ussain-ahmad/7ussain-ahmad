@@ -8,8 +8,6 @@
 - **Build:** Java/Spring Boot backends with automated testing and secure architecture.
 - **Teach:** Mentor aspiring developers and upskill internal teams (e.g., transitioning Manual Testers to AQA) in Java ecosystems.
 
----
-
 ## 🔭 Featured Projects & Research
 
 ### Cryptographic Primitives (Python / SageMath)
@@ -23,7 +21,6 @@
 
 *(I’ll keep adding links here as I publish more repos.)*
 
----
 ## 🛠️ Technical Workflow
 
 | Domain | Focus Area | Tools |
@@ -31,16 +28,14 @@
 | **Cryptographic Lab** | Primitive Design & Analysis | Python, Jupyter, SageMath, Magma, GAP |
 | **Instructional Lab** | Enterprise Architecture | Java, Spring Boot, SQL, Azure, Docker |
 
----
-
 ## 🌱 Currently Exploring
 
 - **Post-Quantum Cryptanalysis:** Analyzing DHH McEliece-variant security (decoding complexity and NIST SP 800-22 tests).
 - **Advanced Protocols:** Deepening knowledge in Zero‑Knowledge Proofs (ZKPs) and Secure Multi‑Party Computation (MPC).
 - **Curriculum Development:** Creating advanced Java projects for teaching purposes.
 
----
-## Contact
+
+## 📫 Contact
 - **LinkedIn:** [linkedin.com/in/7ussain-ahmad](https://linkedin.com/in/7ussain-ahmad)
 - **Email:** 7ussain.ahmad (at) gmail.com
 - **ORCID:** [0000-0001-6959-8352](https://orcid.org/0000-0001-6959-8352)
