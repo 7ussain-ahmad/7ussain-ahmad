@@ -2,11 +2,12 @@
 
 **Two worlds, one focus:** PhD Candidate in Cryptography & Lead Java Instructor.
 
----
+
 ## What I do
 - **Design & Analyze:** Cryptographic schemes (Latin squares, error-correcting codes, PQC, Secret Sharing).
 - **Build:** Java/Spring Boot backends with automated testing and secure architecture.
 - **Teach:** Mentor aspiring developers and upskill internal teams (e.g., transitioning Manual Testers to AQA) in Java ecosystems.
+
 
 ## 🔭 Featured Projects & Research
 
@@ -21,12 +22,14 @@
 
 *(I’ll keep adding links here as I publish more repos.)*
 
+
 ## 🛠️ Technical Workflow
 
 | Domain | Focus Area | Tools |
 | :--- | :--- | :--- |
 | **Cryptographic Lab** | Primitive Design & Analysis | Python, Jupyter, SageMath, Magma, GAP |
 | **Instructional Lab** | Enterprise Architecture | Java, Spring Boot, SQL, Azure, Docker |
+
 
 ## 🌱 Currently Exploring
 
