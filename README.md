@@ -1,44 +1,78 @@
 # Hi, I'm Hussain 👋
 
-**Two worlds, one focus:** PhD Candidate in Cryptography & Lead Java Instructor.
+**PhD Candidate in Cryptography** at the University of Debrecen, and **Lead Java Instructor** at NIX Tech Budapest.
 
+I design cryptographic primitives from algebraic structures, prove security bounds for them, and teach Java to the next generation of developers.
 
-## What I do
-- **Design & Analyze:** Cryptographic schemes (Latin squares, error-correcting codes, PQC, Secret Sharing).
-- **Build:** Java/Spring Boot backends with automated testing and secure architecture.
-- **Teach:** Mentor aspiring developers and upskill internal teams (e.g., transitioning Manual Testers to AQA) in Java ecosystems.
+---
 
+## 📄 Publications
 
-## 🔭 Featured Projects & Research
+- **Ahmad, H., & Hannusch, C.** (2025). *A Scalable Symmetric Cryptographic Scheme Based on Latin Square, Permutations, and Reed-Muller Codes for Resilient Encryption.* **Cryptography** 9(4), 70. [doi:10.3390/cryptography9040070](https://doi.org/10.3390/cryptography9040070)
 
-### Cryptographic Primitives (Python / SageMath)
-- **DHH / McEliece‑variant Analysis:** Ongoing doctoral research on the security of a HL‑code–based PQC system, focusing on decoding complexity, randomness tests, and implementation aspects.
-- **Algebraic SPN Cipher:** A Python implementation of a Latin-square / Reed–Muller–based SPN. Includes diffusion analysis, differential cryptanalysis, and performance benchmarking against AES.
-- **Keyed Hash Function Prototype:** Theoretical design and analysis for a lightweight keyed hash targeting IoT constraints.
-- **Secret Sharing in Multi‑cloud:** Implementation of an improved threshold secret sharing algorithm in CloudSim (MSc research).
+- **Ahmad, H., & Hannusch, C.** (2023). *A New Keyed Hash Function Based on Latin Squares and Error-Correcting Codes to Authenticate Users in Smart Home Environments.* **C2SI 2023**, Springer LNCS 13874, 97–110. [doi:10.1007/978-3-031-33017-9_8](https://doi.org/10.1007/978-3-031-33017-9_8)
 
-### Engineering & Architecture (Java Ecosystem)
-- **Java REST API Template:** Production‑ready Spring Boot template with JPA, Docker, and comprehensive test coverage.
+- *In preparation:* Structural hardening and security evaluation of a scalable Latin-square SPN with key-dependent S-boxes.
 
-*(I’ll keep adding links here as I publish more repos.)*
+**ORCID:** [0000-0001-6959-8352](https://orcid.org/0000-0001-6959-8352)
 
+---
 
-## 🛠️ Technical Workflow
+## 🔬 Research
 
-| Domain | Focus Area | Tools |
-| :--- | :--- | :--- |
-| **Cryptographic Lab** | Primitive Design & Analysis | Python, Jupyter, SageMath, Magma, GAP |
-| **Instructional Lab** | Enterprise Architecture | Java, Spring Boot, SQL, Azure, Docker |
+**Symmetric primitive design and cryptanalysis.** My work builds block ciphers and hash functions from Latin squares and error-correcting codes, then analyses how well they hold up against differential and linear attacks.
 
+Current work on the RM-LS cipher includes:
 
-## 🌱 Currently Exploring
+- **Wide-trail diffusion layer.** Diagnosed a structural weakness in the original bit-level permutation (single-bit differences could cross it activating only one S-box per round) and replaced it with MDS circulant matrices over GF(2^m) plus a key-dependent digit permutation. Proved a lower bound of ⌊R/2⌋·B_min active S-boxes that holds for every key, extending to linear cryptanalysis via the MDS transpose property.
 
-- **Post-Quantum Cryptanalysis:** Analyzing DHH McEliece-variant security (decoding complexity and NIST SP 800-22 tests).
-- **Advanced Protocols:** Deepening knowledge in Zero‑Knowledge Proofs (ZKPs) and Secure Multi‑Party Computation (MPC).
-- **Curriculum Development:** Creating advanced Java projects for teaching purposes.
+- **MILP active-S-box analysis.** Modelled the minimum active-S-box count as a mixed-integer linear program and solved ~700 proven-optimal instances on an HPC cluster (Gurobi + HiGHS cross-validation). Result: the required round count tracks the code dimension *k*, not the Latin-square order *n*.
 
+- **Key-schedule hardening.** Diagnosed a related-key weakness (5.8% key avalanche) and redesigned the schedule with round constants, butterfly rotations, and a logarithmic warm-up stage, reaching near-ideal SKAC statistics at zero steady-state cost.
+
+- **S-box filtering.** An isotopism-filtering procedure guaranteeing per-key floors on differential probability and nonlinearity, certified as the attainability frontier of the additive Latin-square family.
+
+**Post-quantum (ongoing).** Security and implementation analysis of the DHH cryptosystem, a McEliece variant over HL-codes.
+
+**Earlier work.** Threshold secret sharing for multi-cloud storage (MSc thesis, CloudSim).
+
+---
+
+## 💻 Engineering
+
+Java backend development and test automation, with production experience in banking systems.
+
+- **Spring Boot / JPA / Hibernate / REST APIs** — the stack I build with and teach.
+- **Test automation** — Selenium, REST Assured, JUnit.
+- **Previously:** Financial Exchange Management System (1000+ users) and Insurance Record Management System (100,000+ records) at the Central Bank of Syria.
+
+---
+
+## 👨‍🏫 Teaching
+
+Teaching is the part of my work I enjoy most.
+
+- **NIX Tech Budapest** — Lead the Java track of Hungary's National Dual Training Program: 150+ students from 14 secondary technical schools over two years. Mentor 50+ developers and QA engineers transitioning into automation.
+- **Graz University of Technology** — Guest lecturer, Data Management (SS2024).
+- **University of Debrecen** — Teaching assistant, Logic in Computer Science and Foundations of Computer Security.
+
+---
+
+## 🛠️ Tools
+
+| Domain | Tools |
+| :--- | :--- |
+| **Cryptography** | Python, NumPy, SageMath, Magma, GAP, Gurobi/HiGHS (MILP), NIST STS |
+| **Engineering** | Java, Spring Boot, SQL, Docker, Azure, Git |
+
+---
+
+## 🌱 Currently exploring
+
+Zero-knowledge proofs, secure multi-party computation, and formal security proofs.
+
+---
 
 ## 📫 Contact
-- **LinkedIn:** [linkedin.com/in/7ussain-ahmad](https://linkedin.com/in/7ussain-ahmad)
-- **Email:** 7ussain.ahmad (at) gmail.com
-- **ORCID:** [0000-0001-6959-8352](https://orcid.org/0000-0001-6959-8352)
+
+[LinkedIn](https://linkedin.com/in/7ussain-ahmad) · 7ussain.ahmad (at) gmail.com · [ORCID](https://orcid.org/0000-0001-6959-8352)
